@@ -32,3 +32,15 @@ func main() {
     fmt.Print(string(dat))
 }
 ````
+
+#### Escribir un archivo completo a un string
+
+````go
+func main() {
+    d1 := []byte("hello\ngo\n")
+    err := ioutil.WriteFile("/tmp/dat1", d1, 0644)
+    if err != nil {
+        log.Fatal(err)
+    }
+}
+````
