@@ -1,6 +1,6 @@
-# Trabajo con archivos
+# Trabajo con archivos en GO
 
-#### Leer un archivo linea
+#### Leer un archivo línea por línea
 
 ````go
 func main() {
@@ -33,7 +33,7 @@ func main() {
 }
 ````
 
-#### Escribir un archivo completo a un string
+#### Escribir un string completo a un archivo
 
 ````go
 func main() {
