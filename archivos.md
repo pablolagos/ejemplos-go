@@ -1,6 +1,6 @@
 # Trabajo con archivos
 
-#### Leer un archivo linea por linea a un array
+#### Leer un archivo linea
 
 ````go
 func main() {
@@ -19,4 +19,15 @@ func main() {
         log.Fatal(err)
     }
 }
+````
+
+#### Leer un archivo completo a un string
+
+````go
+func main() {
+    dat, err := ioutil.ReadFile("/tmp/dat")
+    if err != nil {
+        log.Fatal(err)
+    }
+    fmt.Print(string(dat))
 ````
